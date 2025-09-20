@@ -39,9 +39,10 @@ This week focuses on preparing the development environment with essential open-s
 
 | Task | Description | Tools Installed | Status |
 |------|-------------|----------------|---------|
-| **Task 0** | 🛠️ [Tools & Environment Setup](https://github.com/vivek-kosigi/RTL2GDS_VSD/tree/main/Week_0/task_2) | **Complete EDA Toolchain Setup** | ✅ Done |
+|**Task 1** | [Summary](https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_0/task_1/Summary) | **video explanined** | ✅ Done |
+| **Task 2** | 🛠️ [Tools & Environment Setup](https://github.com/vivek-kosigi/RTL2GDS_VSD/tree/main/Week_0/task_2) | **Complete EDA Toolchain Setup** | ✅ Done |
 
-### 📦 **Tools Installed in Week 0 - Task 2**
+
 
 #### **Core RTL Design & Synthesis Tools**
 
