@@ -64,7 +64,7 @@ yosys
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_0/task_2/images/yosys_vlsi.jpeg" 
        alt="Yosys Installed" width="600"/>
 </p>
 
@@ -94,7 +94,7 @@ $ sudo apt install iverilog
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_0/task_2/images/iverilog_vlsi.jpeg" 
        alt="Iverilog Installed" width="600"/>
 </p>
 
@@ -124,7 +124,7 @@ $ sudo apt install gtkwave
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_0/task_2/images/gtkwave_vlsi.jpeg" 
        alt="GTKWave Installed" width="600"/>
 </p>
 
@@ -153,7 +153,7 @@ $ sudo apt install ngspice
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_0/task_2/images/ngspice_vlsi.jpeg" 
        alt="ngspice Installed" width="600"/>
 </p>
 
@@ -177,7 +177,7 @@ Magic VLSI is an open-source VLSI layout tool widely used for IC design, DRC, an
 
 ## ✅ **Magic VLSI Installation**
 
-[Magic VLSI](http://opencircuitdesign.com/magic/) is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.  
+Magic VLSI is an open-source VLSI layout tool widely used for IC design, DRC, and visualization.  
 
 Follow the steps below to install Magic on an Ubuntu/Debian system:
 
@@ -201,7 +201,7 @@ $ sudo make install
 
 ## 📷 **Installation Verification**
 <p align="center">
-  <img src="" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_0/task_2/images/magic_vlsi.jpeg" 
        alt="magic vlsi Installed" width="600"/>
 </p>
 
