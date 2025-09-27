@@ -56,6 +56,11 @@ synth -top <sub_module1>
 
 Allows synthesizing and optimizing submodules individually—useful for large projects or when submodules are reused many times.
 
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/hierarchy_design.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
 ### 🏞️ Flat Design
 
 - **Flat design:** All module hierarchies are collapsed into a single-level netlist using the `flatten` command.
@@ -63,6 +68,11 @@ Allows synthesizing and optimizing submodules individually—useful for large pr
 
 > **Why flatten?**  
 > Flat synthesis provides better global optimization across module boundaries—but loses modularity.
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/flat_design.png" 
+      alt="Simulation Block Diagram" width="600"/>
+</p>
 
 ---
 
@@ -129,6 +139,11 @@ No need for resource-heavy multipliers—hardware gets optimized!
 
 - Synthesize a "multiply by 2" design; verify the output is shifted left by one.
 - Synthesize "multiply by 8"; verify output is shifted left by three (or `a` is appended with two zeros).
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
 
 ---
 
