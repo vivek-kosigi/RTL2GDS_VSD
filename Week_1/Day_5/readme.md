@@ -87,7 +87,7 @@ end
 endmodule
 ```
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/incomp_if.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/incomp_if.PNG" 
        alt="Incomplete If Statement" width="600"/>
 </p>
 ---
@@ -95,7 +95,7 @@ endmodule
 ### Lab 2: Synthesis Result of Lab 1
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/incomp_if_netlist.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/incomp_if_netlist.PNG" 
        alt="Incomplete If Statement synthesis" width="600"/>
 </p>
 
@@ -114,7 +114,7 @@ end
 endmodule
 ```
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/incomp_if2.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/incomp_if2.PNG" 
        alt="Nested If-Else" width="600"/>
 </p>
 
@@ -122,7 +122,7 @@ endmodule
 
 ### Lab 4: Synthesis Result of Lab 3
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/incomp_if2_netlist.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/incomp_if2_netlist.PNG" 
        alt="Nested If-Else synthesis" width="600"/>
 </p>
 ---
@@ -146,14 +146,14 @@ endmodule
 ***Simulation:***
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/incomp_case.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/incomp_case.PNG" 
        alt="Incomplete Overlapping Case" width="600"/>
 </p>
 
 ***Synthesis:***
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/incomp_case_netlist.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/incomp_case_netlist.PNG" 
        alt="Incomplete Case synthesis" width="600"/>
 </p>
 
@@ -174,7 +174,7 @@ end
 endmodule
 ```
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/comp_case.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/comp_case.PNG" 
        alt="Complete Case Statement" width="600"/>
 </p>
 ---
@@ -182,7 +182,7 @@ endmodule
 ### Lab 7: Synthesis Result of Lab 5
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/comp_case_netlist.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/comp_case_netlist.PNG" 
        alt="Complete Case Statement" width="600"/>
 </p>
 
@@ -210,21 +210,21 @@ endmodule
 ***Simulation:***
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/bad_case.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/bad_case.PNG" 
        alt="Incomplete Case Statement" width="600"/>
 </p>
 
 ***Synthesis:***
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/bad_case_netlist.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/bad_case_netlist.PNG" 
        alt="Incomplete Case Statement synthesis" width="600"/>
 </p>
 
 ***Gate Level Simulation:***
 
 <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/bad_case_gls.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images//bad_case_gls.PNG" 
        alt="Incomplete Case Statement gls" width="600"/>
 </p>
 ---
@@ -289,7 +289,7 @@ endgenerate
 An RCA adds binary numbers using a chain of full adders. To add `n` bits, you need `n` full adders. Each carry-out connects to the carry-in of the next stage.
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/Ripple_carry_adder.png" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/Ripple_carry_adder.png" 
        alt="Ripple carry adder" width="600"/>
 </p>
 
@@ -319,14 +319,14 @@ endmodule
 ***Simulation:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/mux_generate.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/mux_generate.PNG" 
        alt="mux_generate simulation" width="600"/>
 </p>
 
 ***Synthesis:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/mux_generate_netlist.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/mux_generate_netlist.PNG" 
        alt="mux_generate synthesis" width="600"/>
 </p>
 ---
@@ -360,21 +360,21 @@ endmodule
 ***Simulation:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/demux_case.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/demux_case.PNG" 
        alt="demux case simulation" width="600"/>
 </p>
 
 ***Synthesis:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/demux_case_netlist.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/demux_case_netlist.PNG" 
        alt="demux case synthesis" width="600"/>
 </p>
 
 ***Gate level Simulation:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/demux_case_gls.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/demux_case_gls.PNG" 
        alt="demux case gls" width="600"/>
 </p>
 ---
@@ -404,21 +404,21 @@ endmodule
 ***Simulation:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/demux_generate.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/demux_generate.PNG" 
        alt="demux generate simulation" width="600"/>
 </p>
 
 ***Synthesis:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/demux_generate_netlist.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/demux_generate_netlist.PNG" 
        alt="demux generate synthesis" width="600"/>
 </p>
 
 ***Gate level Simulation:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/demux_generate_gls.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/demux_generate_gls.PNG" 
        alt="demux generate gls" width="600"/>
 </p>
 ---
@@ -456,21 +456,21 @@ endmodule
 ***Simulation:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/rca.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/rca.PNG" 
        alt="rca simulation" width="600"/>
 </p>
 
 ***Synthesis:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/rca.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/rca.PNG" 
        alt="rca synthesis" width="600"/>
 </p>
 
 ***Gate level Simulation:***
 
  <p align="center">
-  <img src="https://github.com/lagudushruthi/Risc-V-RTL2GDS/blob/main/Week1/Day5/rca.PNG" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_5/images/rca.PNG" 
        alt="rca gls" width="600"/>
 </p>
 
