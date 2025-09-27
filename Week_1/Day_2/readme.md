@@ -110,10 +110,46 @@ Allows synthesizing and optimizing submodules individually—useful for large pr
 1. Simulate in your tool of choice and observe waveforms to confirm correct reset/set operation.
 2. Synthesize each style using:
     ```
+    read_liberty -lib ../lib/sky180_fd_sc_hd__tt_025C_1v80.lib
+    read_verilog <file_name>
     synth -top <dff_variant>
     dfflibmap -liberty ../lib/sky180_fd_sc_hd__tt_025C_1v80.lib
+    abc -liberty ../lib/sky180_fd_sc_hd__tt_025C_1v80.lib
+    show
+    write_verilog -noattr <file_name>
     ```
    > `dfflibmap` directly maps the flops to actual DFF cells in the library, speeding up synthesis.
+   
+### 🛠️ **My Lab Results**  
+
+In this lab we had to do simulation & synthesis on 3 codes 
+1. d flip flop asynchronous reset =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/dff_async_res_sim.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/dff_async_res_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+2. d flip flop asynchronous set =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/dff_asyn_set_sim.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/dff_async_set_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+3. d flip flop synchronous reset =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/dff_sync_res_sim.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/dff_sync_res_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
 
 ---
 
@@ -141,7 +177,7 @@ No need for resource-heavy multipliers—hardware gets optimized!
 - Synthesize "multiply by 8"; verify output is shifted left by three (or `a` is appended with two zeros).
 
 <p align="center">
-  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/.png" 
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_2/images/mult2_syn.png" 
        alt="Simulation Block Diagram" width="600"/>
 </p>
 
