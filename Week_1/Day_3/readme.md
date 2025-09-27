@@ -32,9 +32,19 @@ Y = ((0 * B) + C)' = C'
 
 This reduces gate count by removing logic related to \(A\).
 
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/comb_const_opt.png" 
+       alt="Simulated Wavefrom of MUX" width="600"/>
+</p>
+
 ### 2️⃣ Boolean Logic Optimizations
 
 Uses algebraic laws and automated algorithms to simplify Boolean logic, minimizing gate usage and improving speed.
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/boolean_opt.png" 
+       alt="Simulated Wavefrom of MUX" width="600"/>
+</p>
 
 ---
 
@@ -65,20 +75,118 @@ Replicates flip-flops driving many loads to reduce fanout delay and fix timing v
 
 ## 🛠 Lab Activities
 
-### Combinational Synthesis
+## Combinational Designs
 
-- Synthesized five designs: `opt_check2`, `opt_check3`, `opt_check4`, `multiple_module_opt`, and `multiple_module_opt2`.
+- Synthesized six designs: `opt_check`, `opt_check2`, `opt_check3`, `opt_check4`, `multiple_module_opt`, and `multiple_module_opt2`.
 - Observed how synthesis uses basic gates (AND, OR, 3-input AND, XNOR) and manages multiple modules to implement multiplexers.
 
-### Sequential Synthesis
+### Combinational Synthesis Results
+
+Here we only synthesised 6 codes 
+
+1. opt_check =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/opt_check_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
+2. opt_check2 =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/opt_check2_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
+3. opt_check3 =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/opt_check3_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
+4. opt_check4 =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/opt_check4_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
+5. multiple_module_opt =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/multi_opt_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
+6. multiple_module_opt2 =
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/multi_opt2_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
+
+## Sequential Designs
 
 - Simulated and synthesized `diff_const3`, `diff_const4`, `diff_const5`.
 - Verified constant propagation and sequential logic optimizations.
 
-### Unused Port Optimization
+### Sequential Simulaton & Synthesis Results
+
+Here we simulated & synthesised 3 codes 
+
+  
+1. d flipflop constant 1 =
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const1_sim.png" alt="Simulation" width="45%">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const1_sch.png" alt="Schematic" width="45%">
+</div>
+
+  
+2. d flipflop constant 2 =
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const2_sim.png" alt="Simulation" width="45%">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const2_sch.png" alt="Schematic" width="45%">
+</div>
+
+  
+3. d flipflop constant 3 =
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const3_sim.png" alt="Simulation" width="45%">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const3_sch.png" alt="Schematic" width="45%">
+</div>
+
+4. d flipflop constant 4 =
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const4_sim.png" alt="Simulation" width="45%">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const4_sch.png" alt="Schematic" width="45%">
+</div>
+
+5. d flipflop constant 5 =
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const5_sim.png" alt="Simulation" width="45%">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/dff_const5_sch.png" alt="Schematic" width="45%">
+</div>
+
+
+## Unused Port Optimization
 
 - Compared `counter_opt` (driving one output) to `counter_opt2` (driving all outputs).
 - Noticed how tools prune unneeded logic to minimize area and power.
+
+### Optimize Unused Ports
+
+1. counter_opt =
+
+<div align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/counter_opt_sch.png" alt="Simulation" width="50%">
+</div>
+
+2. counter_opt2 =
+   
+<div align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_3/images/counter_opt2_sch.png" alt="Simulation" width="50%">
+</div>
 
 ---
 
