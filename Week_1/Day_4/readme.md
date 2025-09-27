@@ -39,19 +39,69 @@ Gate-Level Simulation (GLS) is the process of simulating a digital circuit **aft
 
 ## 🛠️ Lab Activities: Investigating Mismatches
 
+Here we well be evaluating the designs by  
+ - simulating   
+ - synthesising  
+ - simulating with netlist code (formal verification)
+
 ### 1. Missing Sensitivity List
 
 - Tested with `ternary_operator_mux.v`:
 
-- Simulation, synthesis, and post-synthesis simulation waveforms matched perfectly when using `always @(*)`.
+- Code Analysis when using `always @(*)`.
 
 - Tested with `bad_mux.v`:
 
 - Waveforms differed across simulation stages due to incomplete sensitivity list (`always @(sel)`).
 
+## Results 
+
+ⅰ. Ternary Operator Mux =
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/ternary_op_sim.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/ternary_op_mux_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/ternary_op_net_sim.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
+ⅱ. Bad Mux =
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/bad_mux_sim1.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/bad_mux_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/bad_mux_sim2.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
 ### 2. Blocking vs Non-blocking Assignments
 
-- Experiments revealed how the use of blocking versus non-blocking assignments impacted the simulation results, especially in sequential parts of the design.
+- Experiments done on blocking caveat design revealed how the use of blocking versus non-blocking assignments impacted the simulation results, especially in sequential parts of the design.
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/blocking_caveat_sim1.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/blocking_caveat_sch.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_4/images/blocking_caveat_sim2.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
 
 ---
 
