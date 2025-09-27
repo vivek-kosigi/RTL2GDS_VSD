@@ -86,6 +86,53 @@ This week focuses on preparing the development environment with essential open-s
 
 ---
 
+## 📅 **Week 1 — RTL Simulation & Synthesis**
+
+  
+  <summary><b>🔹 Overview: Week 1 Tasks</b></summary>
+
+  This week focuses on **practical RTL simulation, synthesis, and post-synthesis verification** using open-source EDA tools.
+
+  ### 🛠️ **Tools Used**
+
+  | Tool | Purpose |
+  |------|---------|
+  | 🧠 **Yosys** | RTL Synthesis & Logic Optimization |
+  | 📟 **Iverilog** | RTL Simulation & Compilation |
+  | 📊 **GTKWave** | Waveform Analysis |
+  | 📦 **Lib Files** | Standard cell library for technology mapping |
+  
+  ### 🔹 **Daily Topics**
+  
+  | Day | Concept Focus |
+  | -----|---------------|
+  | Day 1 | RTL Simulation, Multiplexer design, Basic Synthesis |
+  | Day 2 | `.lib` files, Hierarchical vs Flat Synthesis, Flip-Flop coding, RTL Optimizations |
+  | Day 3 | Combinational & Sequential Logic Optimizations, Retiming, State Reduction |
+  | Day 4 | Gate-Level Simulation, Synthesis-Simulation Mismatch, Coding Best Practices |
+  | Day 5 | *(Ongoing)* |
+
+  ### ✅ **Work Completion Tracker**
+
+  | Work | Completion |
+  |------|------------|
+  | Simulation | ✅ Done |
+  | Synthesis | ✅ Done |
+  | Post-Synthesis Simulation | ✅ Done |
+  | Creation of GitHub repo with data | ✅ Done |
+
+  **Key Takeaways:**
+
+  - RTL simulation verifies logic before hardware implementation.  
+  - Synthesis converts RTL to gate-level netlist using `.lib` cells.  
+  - Post-synthesis simulation ensures functional correctness.  
+  - Understanding `.lib` files, hierarchical design, and flip-flop coding is critical for real-world ASIC design.
+
+  
+
+
+---
+
 ## 🙏 **Acknowledgment**
 
 <div align="center">
@@ -99,8 +146,9 @@ I am thankful to [**Kunal Ghosh**](https://github.com/kunalg123) and Team **[VLS
 ## 📈 **Weekly Progress Tracker**
 
 ![Week 0](https://img.shields.io/badge/Week%200-Tools%20Setup-success?style=flat-square)
-![Week 1](https://img.shields.io/badge/Week%201-Coming%20Soon-lightgrey?style=flat-square)
-![Week 2](https://img.shields.io/badge/Week%202-Upcoming-lightgrey?style=flat-square)
+![Week 1](https://img.shields.io/badge/Week%201-RTL%20Simulation%20&%20Synthesis-lightgrey?style=flat-square)
+![Week 2](https://img.shields.io/badge/Week%202-Coming%20Soon-lightgrey?style=flat-square)
+![Week 3](https://img.shields.io/badge/Week%203-Upcoming-lightgrey?style=flat-square)
 
 ### 🚀 **Journey Continues...**
 
