@@ -15,6 +15,11 @@ Simulation involves two main code files:
 - **Design File:** Implements hardware logic (e.g., `good_mux.v`)
 - **Testbench File:** Applies stimuli (test vectors) to the design (e.g., `tb_good_mux.v`)
 
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_1/simulation_block_diagram.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
 ---
 
 ## 🗂️ Cloning the Training Repository
@@ -56,6 +61,80 @@ Command to open both design and testbench files for debugging:
 
 ---
 
+### Multiplexer Design code (`good_mux.v`)
+```verilog
+module good_mux (input i0, input i1, input sel, output reg y);
+always @(*)
+begin
+    if(sel)
+        y <= i1;
+    else
+        y <= i0;
+end
+endmodule
+```
+
+**My Understanding of How It Works:**
+- **Inputs:** `i0`, `i1` (data inputs), `sel` (select line)
+- **Output:** `y` (registered output)
+- **Logic:** When `sel` is 1, `y` gets `i1`; when `sel` is 0, `y` gets `i0`
+
+### Testbench code (`tb_good_mux.v`)
+
+```verilog
+`timescale 1ns / 1ps
+module tb_good_mux;
+        // Inputs
+        reg i0,i1,sel;
+        // Outputs
+        wire y;
+
+        // Instantiate the Unit Under Test (UUT)
+        good_mux uut (
+                .sel(sel),
+                .i0(i0),
+                .i1(i1),
+                .y(y)
+        );
+
+        initial begin
+        $dumpfile("tb_good_mux.vcd");
+        $dumpvars(0,tb_good_mux);
+        // Initialize Inputs
+        sel = 0;
+        i0 = 0;
+        i1 = 0;
+        #300 $finish
+            end
+
+always #75 sel = ~sel;
+always #10 i0 = ~i0;
+always #55 i1 = ~i1;
+endmodule
+```
+
+I analyzed how the testbench instantiates the multiplexer and applies test vectors:
+- `sel` toggles every 75 time units
+- `i0` toggles every 10 time units  
+- `i1` toggles every 55 time units
+- My simulation ran for 300 time units
+
+---
+
+## My Simulation Results
+I captured my simulation waveform and saved it as `simulated_wavefrom.png`. The waveform clearly showed:
+- The select signal `sel` toggling every 75 time units
+- Input `i0` toggling every 10 time units  
+- Input `i1` toggling every 55 time units
+- Output `y` correctly following the multiplexer logic
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_1/simulated_wavefrom.png" 
+       alt="Simulated Wavefrom of MUX" width="600"/>
+</p>
+
+---
+
 ## 🏗️ What is Synthesis?
 
 **Synthesis** is the process of **converting RTL (behavioral Verilog) into a gate-level netlist**—a format interpretable for chip fabrication. The *synthesizer* tool handles this translation.
@@ -66,6 +145,11 @@ Command to open both design and testbench files for debugging:
     - Library (`.lib` file)
     - (Optionally) Constraints (`.sdc` file)
 - **Output:** Technology-mapped netlist (`netlist.v`)
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_1/synthesis_block_diagram.png" 
+       alt="Synthesis Block Diagram" width="600"/>
+</p>
 
 ---
 
@@ -118,6 +202,11 @@ write_verilog good_mux_netlist.v
 write_verilog -noattr good_mux_netlist.v # cleaner netlist
 ```
 
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_1/Day_1/synthesised_schematic.png" 
+       alt="Synthesised Diagram" width="600"/>
+</p>
 
 ---
 
