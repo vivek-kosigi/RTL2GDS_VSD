@@ -48,6 +48,16 @@ This folder contains **5 days of hands-on learning**, exploring RTL simulation, 
 - Ran labs on muxes and sequential designs to verify correct functionality  
 - Learned best practices for **synthesizable, simulation-consistent RTL**
 
+### ⚡ [Day 5: Optimization in Synthesis](./Day_5)
+- Learned how **incomplete if/else and case statements** cause **inferred latches**  
+- Explored **nested if-else, case statements, and default conditions** to avoid latches  
+- Implemented **for-loops** and **generate blocks** for scalable RTL design  
+- Designed and verified:
+  - **4:1 MUX** using for-loop  
+  - **8:1 DEMUX** (case & for-loop versions)  
+  - **8-bit Ripple Carry Adder (RCA)** using generate block  
+- Performed **simulation, synthesis, and GLS** to confirm correctness and optimizations
+
 ---
 
 ## ⚙️ Tools Used
@@ -68,7 +78,8 @@ This folder contains **5 days of hands-on learning**, exploring RTL simulation, 
 2. **Synthesis preserves functionality:** Map RTL to standard cells carefully.  
 3. **Fast vs slow cells:** Understand trade-offs between speed, area, and power.  
 4. **Hierarchical design:** Easier to debug and maintain complex designs.  
-5. **GLS verification:** Ensure netlist matches RTL; watch for sensitivity list & assignment issues.  
+5. **GLS verification:** Ensure netlist matches RTL; watch for sensitivity list & assignment issues.
+6. **Optimization:** Always provide **complete assignments** to avoid latch inference.
 
 ---
 
