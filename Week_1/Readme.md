@@ -27,19 +27,19 @@ This folder contains **5 days of hands-on learning**, exploring RTL simulation, 
 - Explored **.lib standard cells** and **fast vs slow cells**  
 - Verified post-synthesis functionality
 
-### 📘 [Day 2: .lib Files, Hierarchy, Flip-Flops & RTL Optimizations](./Day_2)
+### 📚 [Day 2: .lib Files, Hierarchy, Flip-Flops & RTL Optimizations](./Day_2)
 - Explored **.lib files** and PVT corners for robust design  
 - Compared **hierarchical vs flat synthesis** in Yosys  
 - Implemented **different flip-flop coding styles** (async/sync reset)  
 - Learned RTL **optimization tricks** like power-of-two multiplication → shift-left
 
-### 📘 [Day 3: Combinational & Sequential Optimizations](./Day_3)
+### 🌟 [Day 3: Combinational & Sequential Optimizations](./Day_3)
 - Applied **constant propagation** and **Boolean simplification** in combinational circuits  
 - Optimized sequential logic: **state reduction, retiming, cloning**  
 - Ran labs (`opt_check*`, `diff_const*`, `counter_opt*`) to observe real hardware optimizations  
 - Understood **unused port pruning** and area/power reduction
 
-### 📘 [Day 4: Gate-Level Simulation (GLS) & Synthesis-Simulation Mismatches](./Day_4)
+### 🛠️ [Day 4: Gate-Level Simulation (GLS) & Synthesis-Simulation Mismatches](./Day_4)
 - Performed **GLS using netlist.v** and testbench with `.lib` files  
 - Investigated common causes of simulation-synthesis mismatches:
   - Incomplete sensitivity lists (`always @(sel)` vs `always @(*)`)  
