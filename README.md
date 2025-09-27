@@ -110,7 +110,7 @@ This week focuses on preparing the development environment with essential open-s
   | Day 2 | `.lib` files, Hierarchical vs Flat Synthesis, Flip-Flop coding, RTL Optimizations |
   | Day 3 | Combinational & Sequential Logic Optimizations, Retiming, State Reduction |
   | Day 4 | Gate-Level Simulation, Synthesis-Simulation Mismatch, Coding Best Practices |
-  | Day 5 | *(Ongoing)* |
+  | Day 5 | Optimization in Synthesis |
 
   ### ✅ **Work Completion Tracker**
 
