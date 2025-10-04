@@ -129,8 +129,28 @@ This week focuses on preparing the development environment with essential open-s
   - Understanding `.lib` files, hierarchical design, and flip-flop coding is critical for real-world ASIC design.
 
   
+---
 
+## 📅 **Week 2 — BabySoC Fundamentals & Functional Modelling **
 
+This week focused on **SoC fundamentals** and performing **functional modelling of BabySoC**.  
+
+📘 **Highlights**  
+- Studied **SoC basics**: CPU, memory, peripherals, and interconnects.  
+- Understood BabySoC architecture (RVMYTH core + PLL + DAC).  
+- Learned the role of **functional modelling** before RTL & physical design.  
+- Cloned the **VSDBabySoC repo** and converted `.tlv → .v` using Sandpiper.  
+- Simulated BabySoC with **Icarus Verilog** and analyzed signals in **GTKWave**.  
+
+📊 **Key Results**  
+- Reset releases → signals stabilize and operation begins.  
+- PLL generates a stable ~35.4 ns clock.  
+- RVMYTH feeds continuous data to DAC → confirms correct dataflow.  
+
+✅ **Takeaways**  
+- Stronger grasp of **SoC integration concepts**.  
+- Hands-on with **simulation + waveform verification**.  
+- Experience with **TL-Verilog → Verilog → Simulation workflow**.  
 ---
 
 ## 🙏 **Acknowledgment**
@@ -147,8 +167,9 @@ I am thankful to [**Kunal Ghosh**](https://github.com/kunalg123) and Team **[VLS
 
 ![Week 0](https://img.shields.io/badge/Week%200-Tools%20Setup-success?style=flat-square)
 ![Week 1](https://img.shields.io/badge/Week%201-RTL%20Simulation%20&%20Synthesis-lightgrey?style=flat-square)
-![Week 2](https://img.shields.io/badge/Week%202-Coming%20Soon-lightgrey?style=flat-square)
+![Week 2](https://img.shields.io/badge/Week%202-VSDBabySOC-success?style=flat-square)
 ![Week 3](https://img.shields.io/badge/Week%203-Upcoming-lightgrey?style=flat-square)
+![Week 4](https://img.shields.io/badge/Week%204-coming%20soon-success?style=flat-square)
 
 ### 🚀 **Journey Continues...**
 
