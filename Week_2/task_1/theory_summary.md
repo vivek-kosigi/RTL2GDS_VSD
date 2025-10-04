@@ -3,13 +3,9 @@
 
 ## 🔹 What is an SoC?  
 A **System-on-Chip (SoC)** is an integrated circuit that combines all the essential components of a complete computing system on a single chip.  
-It typically includes:  
-- CPU  
-- GPU  
-- Memory  
-- DSP  
-- Power management  
-- Peripherals (UART, WiFi, Bluetooth, Timers, etc.)  
+It typically includes: CPU, GPU, Memory, etc. 
+
+The SOC lets all the components be on single silicon chip rather than being all individual which leads to better space and power efficiency and also with having compatibility with each other for better performance.
 
 👉 Found in almost every electronic device today: **smartphones, laptops, smartwatches, IoT devices, medical equipment, and vehicles.**  
 
@@ -30,6 +26,12 @@ It typically includes:
 6. **Peripherals** – Interfaces for communication: I/O, WiFi, Bluetooth, etc.  
 
 ---
+
+## 🔹SOC Design Flow 
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_2/task_1/soc_flow.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
 
 ## 🌍 SoCs in the Real World  
 - **Smartphones & Tablets** 📱  
@@ -74,6 +76,11 @@ It typically includes:
 The **VSDBabySoC** is a compact educational SoC built on **RISC-V architecture** with open-source IP cores.  
 It’s designed to help learners explore **Digital, Analog, and Mixed-Signal (DAC)** domains together, covering the full flow from **RTL to GDS**.  
 
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_2/task_1/soc_chip.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
+
 ### ⚙️ Main Components  
 1. **RVMYTH (RISC-V CPU)** 🧠 – a simple CPU core for processing & communication  
 2. **PLL (Phase-Locked Loop)** ⏱️ – generates stable clocks for CPU & DAC  
@@ -85,13 +92,17 @@ It’s designed to help learners explore **Digital, Analog, and Mixed-Signal (DA
 - Contains **Phase Detector, Loop Filter, VCO**  
 - Ensures stable clocking and avoids delays from external clocks  
 
----
 
 ### 🎚️ DAC (Digital-to-Analog Converter)  
-- Converts binary digital values into continuous analog output  
+- This is a 10-bit DAC, Converts binary digital values into continuous analog output  
 - Common Types:  
   - **Weighted Resistor DAC**  
   - **R-2R Ladder DAC**  
+
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_2/task_1/circuit.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
 
 ---
 
