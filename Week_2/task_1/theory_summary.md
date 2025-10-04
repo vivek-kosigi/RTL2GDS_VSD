@@ -81,13 +81,13 @@ It’s designed to help learners explore **Digital, Analog, and Mixed-Signal (DA
 
 ---
 
-## 🔄 PLL (Phase-Locked Loop)  
+### 🔄 PLL (Phase-Locked Loop)  
 - Contains **Phase Detector, Loop Filter, VCO**  
 - Ensures stable clocking and avoids delays from external clocks  
 
 ---
 
-## 🎚️ DAC (Digital-to-Analog Converter)  
+### 🎚️ DAC (Digital-to-Analog Converter)  
 - Converts binary digital values into continuous analog output  
 - Common Types:  
   - **Weighted Resistor DAC**  
@@ -95,9 +95,35 @@ It’s designed to help learners explore **Digital, Analog, and Mixed-Signal (DA
 
 ---
 
-## 📌 Key Takeaways  
-- SoCs integrate all components of a system onto a single chip → compact, efficient, and powerful  
-- Widely used in **consumer electronics, automotive, IoT, and AI**  
-- VSDBabySoC provides **hands-on learning** with CPU, PLL, and DAC → bridging theory with practical SoC design  
+### 🔹 Why BabySoC?
+**BabySoC** is a simplified SoC model used in the VSD training program to help learners build foundational knowledge of SoC design.  
+
+- It strips away the overwhelming complexity of real-world SoCs.  
+- Focuses on **core concepts** like CPU-memory interaction, peripheral integration, and bus-level communication.  
+- Provides a **hands-on learning environment** before diving into industrial-scale designs.  
+- Acts as a **bridge between theory and RTL/PD practice**, making it a perfect learning platform.
 
 ---
+
+# 🔹 Role of Functional Modeling
+Before writing RTL or moving into **physical design**, it is crucial to model and validate system functionality.  
+
+- ✅ **Functional Modeling** allows verifying that the SoC architecture (CPU + memory + interconnect + peripherals) works correctly.  
+- ✅ Helps identify **design bugs early**, reducing rework in later stages.  
+- ✅ Ensures smooth transition from **high-level system concepts → RTL coding → physical design implementation**.  
+
+With **BabySoC**, learners get exposure to this workflow by modeling simplified SoCs, understanding **system behavior first**, and then mapping it into design and implementation.
+
+---
+
+## 📌 Conclusion
+Through BabySoC, I gained an introduction to **SoC fundamentals**:
+- What an SoC is  
+- Its building blocks (CPU, memory, peripherals, interconnect)  
+- Why simplified models like BabySoC are important  
+- The importance of **functional modeling before RTL and PD**  
+
+This journey builds a strong base for advancing towards **RTL design, synthesis, gate-level simulations, and ultimately full physical design**.
+
+---
+
