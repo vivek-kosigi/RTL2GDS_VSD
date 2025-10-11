@@ -114,6 +114,10 @@ dfflibmap -liberty /home/vivek/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.
 opt
 abc -liberty /home/vivek/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
+<p align="center">
+  <img src="https://github.com/vivek-kosigi/RTL2GDS_VSD/blob/main/Week_3/task_1/images/abc.png" 
+       alt="Simulation Block Diagram" width="600"/>
+</p>
 
 ---
 
