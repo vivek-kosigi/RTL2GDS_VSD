@@ -153,6 +153,37 @@ This week focused on **SoC fundamentals** and performing **functional modelling 
 - Experience with **TL-Verilog → Verilog → Simulation workflow**.  
 ---
 
+# 🧩 Week 3: Synthesis, GLS & STA
+
+This week centers on the critical post-RTL stages of chip design, where the abstract Verilog code is transformed into a concrete gate-level representation. The focus is on ensuring that the synthesized design not only functions correctly but also meets required timing constraints for reliable operation.
+
+---
+
+## Tasks Overview
+
+- **Task 1 – Synthesis & GLS:**  
+  Performed synthesis using the Yosys tool to convert RTL Verilog code into a gate-level netlist mapped to standard cell libraries. Verified functional correctness at the gate level through Gate-Level Simulation (GLS), accounting for real delays and interconnect timing to ensure the design behaves as intended after synthesis.
+
+- **Task 2 – STA Theory:**  
+  Studied the foundational concepts of Static Timing Analysis (STA), including setup and hold timing checks, understanding timing paths (launch and capture paths), and how slack is computed to assess if signals meet timing deadlines. This theoretical knowledge is essential for timing closure in complex designs.
+
+- **Task 3 – OpenSTA Practical:**  
+  Applied hands-on STA using the OpenSTA tool by analyzing actual timing reports generated from synthesized designs. Learned how to interpret timing constraints, analyze path delays, and identify critical paths and violations to optimize the design timing.
+
+---
+
+## 🧠 Key Skills Developed
+
+- Mastery of the complete synthesis flow from RTL to gate-level netlist using open-source tools.  
+- Experience in Gate-Level Simulation to validate post-synthesis functionality with accurate timing.  
+- In-depth understanding of Static Timing Analysis principles and practical usage of OpenSTA for timing validation.
+
+---
+
+By completing this week’s activities, you will bridge the gap between RTL behavioral design and gate-level implementation, gaining insights critical for real-world chip design and timing closure.
+
+
+---
 ## 🙏 **Acknowledgment**
 
 <div align="center">
@@ -167,9 +198,10 @@ I am thankful to [**Kunal Ghosh**](https://github.com/kunalg123) and Team **[VLS
 
 ![Week 0](https://img.shields.io/badge/Week%200-Tools%20Setup-success?style=flat-square)
 ![Week 1](https://img.shields.io/badge/Week%201-RTL%20Simulation%20&%20Synthesis-lightgrey?style=flat-square)
-![Week 2](https://img.shields.io/badge/Week%202-VSDBabySOC-success?style=flat-square)
-![Week 3](https://img.shields.io/badge/Week%203-Upcoming-lightgrey?style=flat-square)
-![Week 4](https://img.shields.io/badge/Week%204-coming%20soon-success?style=flat-square)
+![Week 2](https://img.shields.io/badge/Week%202-VSDBabySOC-success?style=flat-square)  
+![Week 3](https://img.shields.io/badge/Week%203-STA-lightgrey?style=flat-square)
+![Week 4](https://img.shields.io/badge/Week%204-Next%20soon-success?style=flat-square)
+![Week 5](https://img.shields.io/badge/Week%205-Upcoming-lightgrey?style=flat-square)
 
 ### 🚀 **Journey Continues...**
 
