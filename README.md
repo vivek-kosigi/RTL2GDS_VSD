@@ -172,6 +172,39 @@ This week centers on the critical post-RTL stages of chip design, where the abst
 
 ---
 
+# 🧠 Week 4: CMOS Device Characterization & Robustness Evaluation
+
+
+Welcome to **Week 4** of the **VSD SoC Design Journey**, where we explored **device-level CMOS fundamentals** using **SPICE simulations**.  
+This week’s focus was to understand transistor behavior, inverter characteristics, switching dynamics, and robustness under power and device variations.
+
+---
+
+## 🧩 Overview
+
+| Focus Area | Key Topics Covered |
+|-------------|--------------------|
+| **Day 1** | NMOS Drain Current Characteristics & SPICE Introduction |
+| **Day 2** | Velocity Saturation & CMOS Inverter VTC |
+| **Day 3** | Switching Threshold & Dynamic Simulations |
+| **Day 4** | Noise Margin & Robustness Evaluation |
+| **Day 5** | Power Supply and Device Variation Analysis |
+
+---
+
+## ⚙️ Tools & Environment
+
+| Tool | Purpose |
+|------|----------|
+| **ngspice** | Circuit-level simulation |
+| **Python** | Script support and data analysis |
+| **Sky130 PDK** | Process Design Kit for simulation |
+| **Git** | Repository cloning and version control |
+
+Repository used: [sky130CircuitDesign](https://github.com/kunalg123/sky130CircuitDesign)
+
+---
+
 ## 🧠 Key Skills Developed
 
 - Mastery of the complete synthesis flow from RTL to gate-level netlist using open-source tools.  
@@ -200,8 +233,9 @@ I am thankful to [**Kunal Ghosh**](https://github.com/kunalg123) and Team **[VLS
 ![Week 1](https://img.shields.io/badge/Week%201-RTL%20Simulation%20&%20Synthesis-lightgrey?style=flat-square)
 ![Week 2](https://img.shields.io/badge/Week%202-VSDBabySOC-success?style=flat-square)  
 ![Week 3](https://img.shields.io/badge/Week%203-STA-lightgrey?style=flat-square)
-![Week 4](https://img.shields.io/badge/Week%204-Next%20soon-success?style=flat-square)
+![Week 4](https://img.shields.io/badge/Week%204-Circuit%20Designing%20-success?style=flat-square)
 ![Week 5](https://img.shields.io/badge/Week%205-Upcoming-lightgrey?style=flat-square)
+![Week 6](https://img.shields.io/badge/Week%206-Next%20soon-success?style=flat-square)
 
 ### 🚀 **Journey Continues...**
 
