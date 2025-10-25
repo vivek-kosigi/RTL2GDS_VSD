@@ -215,8 +215,61 @@ Repository used: [sky130CircuitDesign](https://github.com/kunalg123/sky130Circui
 
 By completing this week’s activities, you will bridge the gap between RTL behavioral design and gate-level implementation, gaining insights critical for real-world chip design and timing closure.
 
+---
+
+# 📘 Week 5 Summary – OpenROAD Flow Setup and Implementation  
+
+
+## 🧠 Overview  
+Week 5 marked the beginning of the **physical design (PD)** flow using **OpenROAD Flow Scripts (ORFS)** — an open-source RTL-to-GDS framework.  
+This week’s objective was to set up the OpenROAD toolchain and execute the **floorplanning** and **placement** stages for the `vsdbabysoc` design on the **Sky130HD** process node.
 
 ---
+
+## ⚙️ Key Highlights  
+
+### **1. OpenROAD Installation**
+- Successfully cloned and built the complete **OpenROAD-flow-scripts** repository.  
+- Installed required dependencies, configured environment variables, and verified tool versions.  
+- Resolved setup issues related to **KLayout** and **library permissions**.  
+- Verified successful setup using:  
+    openroad -version  
+    klayout -v  
+- The system was made ready for full **RTL-to-GDS automation**.
+
+---
+
+### **2. Floorplan and Placement**
+- Executed **floorplan** for the `vsdbabysoc` RISC-V SoC using:  
+    make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan  
+Defined **die area**, **core boundary**, **IO pins**, and **power grid**.  
+- Resolved parsing error in `avsdpll.lib` by correcting commented block definitions.  
+- Performed cell **placement** and verified successful execution using OpenROAD GUI:  
+    make gui_place  
+Observed standard-cell distribution and checked density through placement heatmaps.  
+
+---
+
+## 📊 Tools and Technology
+| Tool | Function |
+|------|-----------|
+| **Yosys** | Logic synthesis |
+| **OpenROAD** | Floorplanning, Placement, CTS, Routing |
+| **OpenSTA** | Static timing analysis |
+| **KLayout / Magic** | Layout viewing and verification |
+| **Sky130HD PDK** | Process design kit used for fabrication-level constraints |
+
+---
+
+## ✅ Takeaways
+- Gained hands-on experience with the **OpenROAD RTL-to-GDSII flow**.  
+- Learned the importance of **floorplanning** for core area definition and power routing.  
+- Understood how **placement** optimizes cell distribution for timing and congestion.  
+- Prepared the working environment for **Week 6 — CTS and Routing implementation**.
+
+---
+
+
 ## 🙏 **Acknowledgment**
 
 <div align="center">
@@ -234,8 +287,10 @@ I am thankful to [**Kunal Ghosh**](https://github.com/kunalg123) and Team **[VLS
 ![Week 2](https://img.shields.io/badge/Week%202-VSDBabySOC-success?style=flat-square)  
 ![Week 3](https://img.shields.io/badge/Week%203-STA-lightgrey?style=flat-square)
 ![Week 4](https://img.shields.io/badge/Week%204-Circuit%20Designing%20-success?style=flat-square)
-![Week 5](https://img.shields.io/badge/Week%205-Upcoming-lightgrey?style=flat-square)
+![Week 5](https://img.shields.io/badge/Week%205-OpenRoad-lightgrey?style=flat-square)
 ![Week 6](https://img.shields.io/badge/Week%206-Next%20soon-success?style=flat-square)
+![Week 7](https://img.shields.io/badge/Week%207-Upcoming-lightgrey?style=flat-square)
+
 
 ### 🚀 **Journey Continues...**
 
